@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   @media screen and (min-width: 768px) {
-    padding: 5% 20%;
+    padding: 5% 10%;
   }
 
   &__container {
@@ -30,7 +30,7 @@
       list-style: none;
       background-color: $lightCream;
       border-radius: 40px;
-      width: 95%;
+      width: 80%;
       height: auto;
       min-height: 70px;
       padding: 1em 2em;
