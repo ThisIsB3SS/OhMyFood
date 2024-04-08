@@ -211,6 +211,44 @@ button:hover,
   right: 1em;
 }
 
+.footer {
+  height: auto;
+  width: auto;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  background-color: #353535;
+  color: white;
+}
+.footer .logo--white {
+  color: white;
+  fill: white;
+  width: 40%;
+  height: auto;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-weight: 300;
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+.footer ul li {
+  display: flex;
+  place-items: center;
+  gap: 0.8em;
+}
+.footer ul li img {
+  margin: 0%;
+  padding: 0%;
+  width: 1em;
+}
+
 html, body {
   margin: 0;
   padding: 0;
