@@ -8,30 +8,29 @@
   align-items: stretch;
   background-color: $grey;
   color: white;
-   & .logo--white{
+  & .logo--white {
     color: white;
     fill: white;
-    width: 40%;
+    width: 50%;
     height: auto;
-   }
-   & ul{
+  }
+  & ul {
     padding: 0;
     list-style: none;
-     @include h4; 
-     font-weight: 300;
-     gap: 0.5em;
-     display: flex;
-     flex-direction: column;
-     & li {
-        display: flex;
-        place-items: center;
-        gap: 0.8em;
-        & img{
-            margin: 0%;
-            padding: 0%;
-            width: 1em;
-        }
-     }
-
-   }
+    @include h4;
+    font-weight: 300;
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+    & li {
+      display: flex;
+      place-items: center;
+      gap: 0.8em;
+      & img {
+        margin: 0%;
+        padding: 0%;
+        width: 1em;
+      }
+    }
+  }
 }
