@@ -53,3 +53,7 @@ button,
 .button {
   @include button;
 }
+
+#heart-icon-checkbox {
+  @include heart-icon-checkbox;
+}

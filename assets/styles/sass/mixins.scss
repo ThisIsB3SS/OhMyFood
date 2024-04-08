@@ -1,7 +1,6 @@
 @mixin h1 {
   font-size: 2.5rem;
   font-weight: 700;
-
 }
 @mixin h2 {
   font-size: 2rem;
@@ -42,10 +41,24 @@
   }
 }
 
-@mixin heart-icon {
-  background-color: transparent;
-  :active {
-    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+@mixin heart-icon-checkbox {
+  border: none !important;
+  box-shadow: none !important;
+  background: white !important;
+  color: none;
+  z-index: 100;
+  //  une règle pour chaque input checkbox activé ! //
+  &-1:checked + label .heart-icon {
+    fill: #9356dc;
+  }
+  &-2:checked + label .heart-icon {
+    fill: #9356dc;
+  }
+  &-3:checked + label .heart-icon {
+    fill: #9356dc;
+  }
+  &-4:checked + label .heart-icon {
+    fill: #9356dc;
   }
 }
 
