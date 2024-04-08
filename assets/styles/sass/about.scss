@@ -1,4 +1,36 @@
-.about__section{
-    background-color: white;
-    
+.about__section {
+  background-color: white;
+  height: auto;
+  width: auto;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    list-style: none;
+    gap: 2em;
+    margin-bottom: 2em;
+
+    &--items {
+      font-size: 1rem;
+      font-weight: 700;
+      list-style: none;
+      background-color: $lightCream;
+      border-radius: 40px;
+      width: 95%;
+      height: auto;
+      padding: 1em;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      box-shadow: 0px 4px 15px 0px #00000026;
+
+      & img {
+        width: 1.2em;
+      }
+    }
+  }
 }
