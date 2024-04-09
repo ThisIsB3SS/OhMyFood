@@ -45,20 +45,13 @@
   border: none !important;
   box-shadow: none !important;
   background: white !important;
-  color: none;
   z-index: 100;
-  //  une règle pour chaque input checkbox activé ! //
-  &-1:checked + label .heart-icon {
-    fill: #9356dc;
-  }
-  &-2:checked + label .heart-icon {
-    fill: #9356dc;
-  }
-  &-3:checked + label .heart-icon {
-    fill: #9356dc;
-  }
-  &-4:checked + label .heart-icon {
-    fill: #9356dc;
+
+  @for $i from 1 through 8 {
+    &#heart-icon-checkbox-#{$i}:checked + label .heart-icon path {
+      fill: $purple;
+      stroke: $purple;
+    }
   }
 }
 

@@ -71,22 +71,69 @@ button:hover,
   border: none !important;
   box-shadow: none !important;
   background: white !important;
-  color: none;
   z-index: 100;
 }
-#heart-icon-checkbox-1:checked + label .heart-icon {
+#heart-icon-checkbox#heart-icon-checkbox-1:checked + label .heart-icon path {
   fill: #9356dc;
+  stroke: #9356dc;
 }
-#heart-icon-checkbox-2:checked + label .heart-icon {
+#heart-icon-checkbox#heart-icon-checkbox-2:checked + label .heart-icon path {
   fill: #9356dc;
+  stroke: #9356dc;
 }
-#heart-icon-checkbox-3:checked + label .heart-icon {
+#heart-icon-checkbox#heart-icon-checkbox-3:checked + label .heart-icon path {
   fill: #9356dc;
+  stroke: #9356dc;
 }
-#heart-icon-checkbox-4:checked + label .heart-icon {
+#heart-icon-checkbox#heart-icon-checkbox-4:checked + label .heart-icon path {
   fill: #9356dc;
+  stroke: #9356dc;
+}
+#heart-icon-checkbox#heart-icon-checkbox-5:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+#heart-icon-checkbox#heart-icon-checkbox-6:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+#heart-icon-checkbox#heart-icon-checkbox-7:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+#heart-icon-checkbox#heart-icon-checkbox-8:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
 }
 
+.header__menu {
+  position: relative;
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding: 1em 1.5em;
+  background-color: white;
+}
+.header__menu__arrow-back-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1em;
+}
+.header__menu__logo {
+  margin: auto;
+  width: 40%;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    padding: 2em 1.5em;
+  }
+  .header__menu__logo {
+    height: 10%;
+    max-height: 50px;
+  }
+}
 .header__main {
   display: flex;
   flex-direction: column;
@@ -278,9 +325,44 @@ button:hover,
   padding: 1em;
   position: relative;
 }
-.restaurants__section__list--card a .card-content-container .heart-icon {
+.restaurants__section__list--card a .card-content-container input {
   position: absolute;
-  right: 2em;
+  border: none !important;
+  box-shadow: none !important;
+  background: white !important;
+  z-index: 100;
+}
+.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-1:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-2:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-3:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-4:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-5:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-6:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-7:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-8:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
 }
 .restaurants__section__list--card a .card-content-container .text-container {
   display: flex;
@@ -379,6 +461,267 @@ button:hover,
   margin: 0%;
   padding: 0%;
   width: 1em;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a :visited {
+  color: black;
+}
+
+button,
+.button {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  width: auto;
+  height: auto;
+  padding: 1.2em;
+  border-radius: 25px;
+  opacity: 0px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+button:hover,
+.button:hover {
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+
+#heart-icon-checkbox {
+  border: none !important;
+  box-shadow: none !important;
+  background: white !important;
+  z-index: 100;
+}
+#heart-icon-checkbox#heart-icon-checkbox-1:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+#heart-icon-checkbox#heart-icon-checkbox-2:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+#heart-icon-checkbox#heart-icon-checkbox-3:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+#heart-icon-checkbox#heart-icon-checkbox-4:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+#heart-icon-checkbox#heart-icon-checkbox-5:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+#heart-icon-checkbox#heart-icon-checkbox-6:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+#heart-icon-checkbox#heart-icon-checkbox-7:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+#heart-icon-checkbox#heart-icon-checkbox-8:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+
+.menu__main {
+  position: relative;
+  height: auto;
+  padding: 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  margin: 0;
+}
+.menu__main img {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center;
+}
+.menu__main .menu__section {
+  position: inherit;
+  z-index: 10;
+  border-radius: 40px 40px 0 0;
+  padding: 10% 1.5em;
+  background-color: #f6f6f6;
+  margin-top: -5vh;
+}
+.menu__main .menu__section__heading {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 8em;
+}
+.menu__main .menu__section__heading .heart-icon {
+  padding-right: 2em;
+  border: none !important;
+  box-shadow: none !important;
+  background: white !important;
+  z-index: 100;
+}
+.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-1:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-2:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-3:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-4:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-5:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-6:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-7:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-8:checked + label .heart-icon path {
+  fill: #9356dc;
+  stroke: #9356dc;
+}
+.menu__main .menu__section__heading--title {
+  width: 100%;
+  font-family: "Shrikhand", serif;
+  font-size: 2.2em;
+  font-weight: 500;
+  color: #353535;
+  margin-bottom: 1em;
+  margin: 0;
+  padding: 0;
+  text-wrap: nowrap;
+}
+.menu__main .menu__section__content {
+  margin-top: 3em;
+  width: 100%;
+}
+.menu__main .menu__section__content__item {
+  width: 100%;
+}
+.menu__main .menu__section__content__item--title {
+  border-bottom: 4px solid #99e2d0;
+  width: 15%;
+  max-width: 40px;
+  padding-bottom: 5px;
+}
+.menu__main .menu__section__content__item--title h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+.menu__main .menu__section__content__item__dish__container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  gap: 1em;
+}
+.menu__main .menu__section__content__item__dish__container__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1em;
+  border-radius: 20px;
+  width: auto;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.menu__main .menu__section__content__item__dish__container__item p {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #353535;
+  margin-top: 0.4em;
+}
+.menu__main .menu__section__content__item__dish__container__item span {
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.menu__main .menu__section__content__item__dish__container__item:hover .after__container {
+  position: relative;
+}
+.menu__main .menu__section__content__item__dish__container__item:hover .after__container span {
+  transform: translateX(-15em);
+}
+.menu__main .menu__section__content__item__dish__container__item:hover .after__container::after {
+  content: "after";
+  height: 100%;
+  background-color: #99e2d0;
+}
+.menu__main .menu__section .cta__button {
+  width: 100%;
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+.menu__main .menu__section .cta__button a {
+  min-width: 10em;
+  text-align: center;
+  font-weight: 400;
 }
 
 html,

@@ -1,4 +1,31 @@
 .header {
+  &__menu {
+    position: relative;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 1em 1.5em;
+    background-color: white;
+    &__arrow-back-icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 1em;
+    }
+    &__logo {
+      margin: auto;
+      width: 40%;
+      height: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 2em 1.5em;
+      &__logo {
+        height: 10%;
+        max-height: 50px;
+      }
+    }
+  }
   &__main {
     display: flex;
     flex-direction: column;
@@ -19,7 +46,6 @@
       & img {
         width: 15%;
       }
-      
     }
   }
 }

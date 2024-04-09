@@ -1,62 +1,63 @@
 .footer {
-  height: auto;
-  width: 100%;
-  padding: 1.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: stretch;
-  background-color: $grey;
-  color: white;
-  @media screen and (min-width: 768px) {
-    padding: 2em 1em;
-    place-items: end;
-  }
-  @media screen and (min-width: 1024px) {
-    padding: 2em 5em;
-  }
-  & .logo__container__footer {
-    @media screen and (min-width: 768px) {
-      order: 2;
-      margin-left: 2em;
-      height: 2em;
-    }
-    @media screen and (min-width: 1024px) {
-      margin-left: 0;
-      margin-right: 2em;
-    }
-    & .logo--white {
-      color: white;
-      fill: white;
-      width: auto;
-      height: 100%;
-    }
-  }
-  & ul {
-    padding: 0;
-    list-style: none;
-    @include h4;
-    font-weight: 300;
-    gap: 0.5em;
+ 
+    height: auto;
+    width: 100%;
+    padding: 1.5em;
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    background-color: $grey;
+    color: white;
     @media screen and (min-width: 768px) {
-      flex-direction: row;
-      justify-content: flex-end;
-      gap: 1em;
+      padding: 2em 1em;
+      place-items: end;
     }
-    & li {
-      display: flex;
-      place-items: center;
-      gap: 0.8em;
+    @media screen and (min-width: 1024px) {
+      padding: 2em 5em;
+    }
+    & .logo__container__footer {
       @media screen and (min-width: 768px) {
-        order: 1;
+        order: 2;
+        margin-left: 2em;
+        height: 2em;
       }
-      & img {
-        margin: 0%;
-        padding: 0%;
-        width: 1em;
+      @media screen and (min-width: 1024px) {
+        margin-left: 0;
+        margin-right: 2em;
+      }
+      & .logo--white {
+        color: white;
+        fill: white;
+        width: auto;
+        height: 100%;
+      }
+    }
+    & ul {
+      padding: 0;
+      list-style: none;
+      @include h4;
+      font-weight: 300;
+      gap: 0.5em;
+      display: flex;
+      flex-direction: column;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1em;
+      }
+      & li {
+        display: flex;
+        place-items: center;
+        gap: 0.8em;
+        @media screen and (min-width: 768px) {
+          order: 1;
+        }
+        & img {
+          margin: 0%;
+          padding: 0%;
+          width: 1em;
+        }
       }
     }
   }
-}

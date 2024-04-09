@@ -2,97 +2,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../assets/styles/style.css" />
-    <title>Menu - A la française</title>
+    <title>Menu - À la française</title>
   </head>
   <body>
-    <header class="header__restaurant">
-      <img src="" alt="" class="arrow-back-icon" />
-      <a href="/Ohmyfood/index.html">
-        <img src="" alt="" class="logo" />
+    <header class="header__menu">
+      <a href="/Ohmyfood/index.html" class="header__menu__arrow-back-icon">
+        <img src="../../assets/icons/arrow-back-icon.svg" alt="" class="" />
       </a>
+      <img
+        src="../../assets/images/logo/ohmyfood@2x.svg"
+        alt=""
+        class="header__menu__logo"
+      />
     </header>
-    <main class="restaurants__section">
-      <img src="" alt="" class="restaurant__image" />
-      <section class="restaurant__menu">
-        <div class="restaurant__menu__heading">
-          <h1 class="restaurant__menu__heading--title"></h1>
-          <img src="" alt="" class="heart-icon" />
+    <main class="menu__main">
+      <img
+        src="../../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt=""
+        class="menu__bg-image"
+      />
+      <section class="menu__section">
+        <div class="menu__section__heading">
+          <h1 class="menu__section__heading--title">À la française</h1>
+          <input
+            type="checkbox"
+            id="heart-icon-checkbox-aLaFrancaise"
+            style="display: none"
+          />
+          <label for="heart-icon-checkbox-aLaFrancaise">
+            <svg
+              class="heart-icon"
+              width="30"
+              height="30"
+              viewBox="0 0 23 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.7206 2.40588L12.7203 2.40612L11.8739 3.35768L11.5003 3.77764L11.1267 3.35768L10.2802 2.40612L10.2797 2.40551C8.28247 0.152951 5.09737 -0.169283 2.9764 1.80238C0.482212 4.12487 0.344816 8.32394 2.58455 10.8499L10.8987 20.2152C10.8987 20.2152 10.8988 20.2153 10.8988 20.2153C11.237 20.5959 11.7593 20.5959 12.0975 20.2153C12.0975 20.2153 12.0975 20.2152 12.0976 20.2152L20.4119 10.8497L20.412 10.8496C22.6556 8.32372 22.5183 4.12498 20.0243 1.8025L12.7206 2.40588ZM12.7206 2.40588C14.7223 0.152696 17.9032 -0.169085 20.024 1.80223L12.7206 2.40588Z"
+                stroke="#101010"
+              />
+            </svg>
+          </label>
         </div>
-        <div class="restaurant__menu__content">
-          <div class="restaurant__menu__content--item">
-            <h2 class="restaurant__menu__content__item--title"></h2>
-            <ul>
-              <li class="restaurant__menu__content__item--dish">
-                <h3>Salade de tomates</h3>
-                <p>Tomates et mozzarella de bufflonne</p>
-                <span>25€</span>
+        <div class="menu__section__content">
+          <div class="menu__section__content__item">
+            <div class="menu__section__content__item--title">
+              <h2>ENTRÉES</h2>
+            </div>
+
+            <ul class="menu__section__content__item__dish__container">
+              <li class="menu__section__content__item__dish__container__item">
+                <h3>Tartare de poulpe acidulé</h3>
+                <p>Aux zestes d'orange</p>
+                <div class="after__container"><span>25€</span></div>
               </li>
-              <li class="restaurant__menu__content__item--dish">
-                <h3>Salade de tomates</h3>
-                <p>Tomates et mozzarella de bufflonne</p>
-                <span>25€</span>
+              <li class="menu__section__content__item__dish__container__item">
+                <h3>Velouté de légumes d'antan</h3>
+                <p>Carotte, panais, topinambour</p>
+                <span>35€</span>
               </li>
-              <li class="restaurant__menu__content__item--dish">
-                <h3>Salade de tomates</h3>
-                <p>Tomates et mozzarella de bufflonne</p>
-                <span>25€</span>
-              </li>
-            </ul>
-          </div>
-          <div class="restaurant__menu__content--item">
-            <h2 class="restaurant__menu__content__item--title"></h2>
-            <ul>
-              <li class="restaurant__menu__content__item--dish">
-                <h3>Salade de tomates</h3>
-                <p>Tomates et mozzarella de bufflonne</p>
-                <span>25€</span>
-              </li>
-              <li class="restaurant__menu__content__item--dish">
-                <h3>Salade de tomates</h3>
-                <p>Tomates et mozzarella de bufflonne</p>
-                <span>25€</span>
-              </li>
-              <li class="restaurant__menu__content__item--dish">
-                <h3>Salade de tomates</h3>
-                <p>Tomates et mozzarella de bufflonne</p>
-                <span>25€</span>
+              <li class="menu__section__content__item__dish__container__item">
+                <h3>Soupe à l'oignon</h3>
+                <p>Revisitée</p>
+                <span>20€</span>
               </li>
             </ul>
           </div>
-          <div class="restaurant__menu__content--item">
-            <h2 class="restaurant__menu__content__item--title"></h2>
-            <ul>
-              <li class="restaurant__menu__content__item--dish">
-                <h3>Salade de tomates</h3>
-                <p>Tomates et mozzarella de bufflonne</p>
-                <span>25€</span>
+          <div class="menu__section__content--item">
+            <div class="menu__section__content__item--title">
+              <h2>PLATS</h2>
+            </div>
+
+            <ul class="menu__section__content__item__dish__container">
+              <li class="menu__section__content__item__dish__container__item">
+                <h3>Coquilles Saint-Jacques</h3>
+                <p>Accompagnées d'une purée de panais</p>
+                <span>40€</span>
               </li>
-              <li class="restaurant__menu__content__item--dish">
-                <h3>Salade de tomates</h3>
-                <p>Tomates et mozzarella de bufflonne</p>
-                <span>25€</span>
+              <li class="menu__section__content__item__dish__container__item">
+                <h3>Magret de canard</h3>
+                <p>Et parmentier de pommes de terre</p>
+                <span>35€</span>
               </li>
-              <li class="restaurant__menu__content__item--dish">
-                <h3>Salade de tomates</h3>
-                <p>Tomates et mozzarella de bufflonne</p>
-                <span>25€</span>
+              <li class="menu__section__content__item__dish__container__item">
+                <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                <p>Sur son lit de gnocchis aux légumes</p>
+                <span>44€</span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__section__content--item">
+            <div class="menu__section__content__item--title">
+              <h2>DESSERTS</h2>
+            </div>
+
+            <ul class="menu__section__content__item__dish__container">
+              <li class="menu__section__content__item__dish__container__item">
+                <h3>Pétales de violettes glacés</h3>
+                <p>Et purée de noisettes</p>
+                <span>18€</span>
+              </li>
+              <li class="menu__section__content__item__dish__container__item">
+                <h3>Fondant au chocolat</h3>
+                <p>Revisité</p>
+                <span>22€</span>
+              </li>
+              <li class="menu__section__content__item__dish__container__item">
+                <h3>Millefeuille croustillant</h3>
+                <p>Myrtilles et pâte d’amande</p>
+                <span>23€</span>
               </li>
             </ul>
           </div>
         </div>
+        <div class="cta__button"><a href="" class="button">Commander</a></div>
       </section>
-      <a href="" class="button">Commander</a>
     </main>
     <footer class="footer">
-      <img src="" alt="" class="logo" />
       <ul>
+        <li class="logo__container__footer">
+          <img
+            src="../../assets/images/logo/ohmyfood-white.svg"
+            alt="logo oh my food"
+            class="logo--white"
+          />
+        </li>
         <li>
-          <img src="" alt="" class="footer__content--icon" />
+          <img
+            src="../../assets/icons/fork-knife-icon.svg"
+            alt=""
+            class="footer__content--icon"
+          />
           Proposer un restaurant
         </li>
         <li>
-          <img src="" alt="" class="footer__content--icon" />
+          <img
+            src="../../assets/icons/hand-shake-icon.svg"
+            alt=""
+            class="footer__content--icon"
+          />
           Devenir partenaire
         </li>
         <li>Mentions légales</li>
