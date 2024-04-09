@@ -597,48 +597,48 @@ button:hover,
 }
 .menu__main .menu__section__heading {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   margin: 0;
+  margin-right: 5%;
   padding: 0;
-  gap: 8em;
 }
-.menu__main .menu__section__heading .heart-icon {
-  padding-right: 2em;
+.menu__main .menu__section__heading input {
   border: none !important;
   box-shadow: none !important;
   background: white !important;
   z-index: 100;
+  position: inherit;
 }
-.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-1:checked + label .heart-icon path {
+.menu__main .menu__section__heading input#heart-icon-checkbox-1:checked + label .heart-icon path {
   fill: #9356dc;
   stroke: #9356dc;
 }
-.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-2:checked + label .heart-icon path {
+.menu__main .menu__section__heading input#heart-icon-checkbox-2:checked + label .heart-icon path {
   fill: #9356dc;
   stroke: #9356dc;
 }
-.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-3:checked + label .heart-icon path {
+.menu__main .menu__section__heading input#heart-icon-checkbox-3:checked + label .heart-icon path {
   fill: #9356dc;
   stroke: #9356dc;
 }
-.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-4:checked + label .heart-icon path {
+.menu__main .menu__section__heading input#heart-icon-checkbox-4:checked + label .heart-icon path {
   fill: #9356dc;
   stroke: #9356dc;
 }
-.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-5:checked + label .heart-icon path {
+.menu__main .menu__section__heading input#heart-icon-checkbox-5:checked + label .heart-icon path {
   fill: #9356dc;
   stroke: #9356dc;
 }
-.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-6:checked + label .heart-icon path {
+.menu__main .menu__section__heading input#heart-icon-checkbox-6:checked + label .heart-icon path {
   fill: #9356dc;
   stroke: #9356dc;
 }
-.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-7:checked + label .heart-icon path {
+.menu__main .menu__section__heading input#heart-icon-checkbox-7:checked + label .heart-icon path {
   fill: #9356dc;
   stroke: #9356dc;
 }
-.menu__main .menu__section__heading .heart-icon#heart-icon-checkbox-8:checked + label .heart-icon path {
+.menu__main .menu__section__heading input#heart-icon-checkbox-8:checked + label .heart-icon path {
   fill: #9356dc;
   stroke: #9356dc;
 }

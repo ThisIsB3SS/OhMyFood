@@ -27,15 +27,15 @@
     margin-top: -5vh;
     &__heading {
       display: flex;
-      justify-content: start;
+      justify-content: center;
       align-items: center;
       margin: 0;
+      margin-right: 5%;
       padding: 0;
-      gap: 8em;
 
-      & .heart-icon {
-        padding-right: 2em;
+      & input {
         @include heart-icon-checkbox;
+        position: inherit;
       }
       &--title {
         width: 100%;
