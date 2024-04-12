@@ -681,36 +681,61 @@ button:hover,
 .menu__main .menu__section__content__item__dish__container__item {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
-  padding: 1em;
   border-radius: 20px;
   width: auto;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
 }
-.menu__main .menu__section__content__item__dish__container__item p {
+.menu__main .menu__section__content__item__dish__container__item .item-text {
+  padding: 1em;
+}
+.menu__main .menu__section__content__item__dish__container__item .item-text p {
   font-size: 1.2em;
   font-weight: 300;
   color: #353535;
   margin-top: 0.4em;
 }
-.menu__main .menu__section__content__item__dish__container__item span {
-  position: absolute;
-  bottom: 20%;
-  right: 5%;
+.menu__main .menu__section__content__item__dish__container__item .price-container {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.menu__main .menu__section__content__item__dish__container__item .price-container .checked-panel {
+  border-radius: 0 20px 20px 0;
+  background-color: #99e2d0;
+  z-index: 100;
+  display: flex;
+  width: 0;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.menu__main .menu__section__content__item__dish__container__item .price-container span {
   font-weight: 700;
   font-size: 1.2em;
+  margin-right: 1em;
 }
-.menu__main .menu__section__content__item__dish__container__item:hover .after__container {
-  position: relative;
+.menu__main .menu__section__content__item__dish__container__item:hover .price-container span {
+  transform: translateX(-0.3em);
+  transition: all 0.5s ease-in-out;
 }
-.menu__main .menu__section__content__item__dish__container__item:hover .after__container span {
-  transform: translateX(-15em);
-}
-.menu__main .menu__section__content__item__dish__container__item:hover .after__container::after {
-  content: "after";
-  height: 100%;
-  background-color: #99e2d0;
+.menu__main .menu__section__content__item__dish__container__item:hover .price-container .checked-panel {
+  display: flex;
+  width: 100px;
+  display: flex;
+  transform: scale(1.05);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 .menu__main .menu__section .cta__button {
   width: 100%;
