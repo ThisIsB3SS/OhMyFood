@@ -786,6 +786,50 @@ button:hover,
   font-weight: 400;
 }
 
+/* HTML: <div class="loader"></div> */
+.loader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: whitesmoke;
+  z-index: 1000;
+  top: 0%;
+  left: 0%;
+  animation: isLoading 4s forwards;
+}
+.loader__container .loader {
+  width: 60px;
+  aspect-ratio: 1;
+  background: linear-gradient(#9356dc 0 0) bottom/100% 0% no-repeat #ccc;
+  -webkit-mask: radial-gradient(circle at 60% 65%, #000 62%, rgba(0, 0, 0, 0) 65%) top left, radial-gradient(circle at 40% 65%, #000 62%, rgba(0, 0, 0, 0) 65%) top right, linear-gradient(to bottom left, #000 42%, rgba(0, 0, 0, 0) 43%) bottom left, linear-gradient(to bottom right, #000 42%, rgba(0, 0, 0, 0) 43%) bottom right;
+  -webkit-mask-size: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  animation: l19 2s infinite linear;
+}
+@keyframes l19 {
+  90%, 100% {
+    background-size: 100% 100%;
+  }
+}
+@keyframes isLoading {
+  0% {
+    opacity: 1;
+    backdrop-filter: blur(10px);
+  }
+  90% {
+    opacity: 1;
+    backdrop-filter: blur(10px);
+  }
+  100% {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+    z-index: -1;
+  }
+}
+
 html,
 body {
   margin: 0;
