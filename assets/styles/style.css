@@ -730,7 +730,7 @@ button:hover,
   font-size: clamp(1.4em, 3vw, 2em);
 }
 .menu__main .menu__section__content__item__dish__container__item .item_text p {
-  font-size: clamp(1.2em, 2vw, 1.5em);
+  font-size: clamp(1.1em, 2vw, 1.5em);
   font-weight: 300;
   color: #353535;
   margin-top: 0.4em;

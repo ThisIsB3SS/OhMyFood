@@ -79,8 +79,6 @@
           width: 15%;
           max-width: 40px;
           padding-bottom: 5px;
-          // margin-left: 50%;
-          // margin-right: 50%;
           & h2 {
             font-size: 1.2em;
             font-weight: 300;
@@ -110,7 +108,7 @@
                 font-size: clamp(1.4em, 3vw, 2em);
               }
               & p {
-                font-size: clamp(1.2em, 2vw, 1.5em);
+                font-size: clamp(1.1em, 2vw, 1.5em);
                 font-weight: 300;
                 color: $grey;
                 margin-top: 0.4em;
