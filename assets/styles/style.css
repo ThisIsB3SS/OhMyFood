@@ -129,6 +129,12 @@ button:hover,
   .header__menu {
     padding: 2em 1.5em;
   }
+  .header__menu__arrow-back-icon {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    padding: 1em;
+  }
   .header__menu__logo {
     height: 10%;
     max-height: 50px;

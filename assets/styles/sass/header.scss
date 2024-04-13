@@ -20,6 +20,12 @@
 
     @media screen and (min-width: 768px) {
       padding: 2em 1.5em;
+      &__arrow-back-icon {
+        position: absolute;
+        left: 0;
+        top: 20%;
+        padding: 1em;
+      }
       &__logo {
         height: 10%;
         max-height: 50px;
