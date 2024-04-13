@@ -575,7 +575,7 @@ button:hover,
   position: relative;
   height: auto;
   padding: 0;
-  background-color: #f6f6f6;
+  background-color: white;
   z-index: 1;
   margin: 0;
 }
@@ -587,6 +587,11 @@ button:hover,
   object-fit: cover;
   object-position: center;
 }
+@media screen and (min-width: 768px) {
+  .menu__main img {
+    height: 50vh;
+  }
+}
 .menu__main .menu__section {
   position: inherit;
   z-index: 10;
@@ -595,13 +600,29 @@ button:hover,
   background-color: #f6f6f6;
   margin-top: -5vh;
 }
+@media screen and (min-width: 768px) {
+  .menu__main .menu__section {
+    width: 70vw;
+    margin-inline: auto;
+    padding: 5% 1.5em;
+  }
+}
 .menu__main .menu__section__heading {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  text-align: center;
   margin: 0;
   margin-right: 5%;
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .menu__main .menu__section__heading {
+    gap: 1em;
+    padding: 0 1em;
+    justify-content: center;
+  }
 }
 .menu__main .menu__section__heading input {
   border: none !important;
@@ -643,7 +664,6 @@ button:hover,
   stroke: #9356dc;
 }
 .menu__main .menu__section__heading--title {
-  width: 100%;
   font-family: "Shrikhand", serif;
   font-size: 2.2em;
   font-weight: 500;
@@ -656,9 +676,16 @@ button:hover,
 .menu__main .menu__section__content {
   margin-top: 3em;
   width: 100%;
+  gap: 2em;
+  display: flex;
+  flex-direction: column;
 }
 .menu__main .menu__section__content__item {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  align-items: start;
 }
 .menu__main .menu__section__content__item--title {
   border-bottom: 4px solid #99e2d0;
@@ -689,10 +716,10 @@ button:hover,
   width: auto;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
 }
-.menu__main .menu__section__content__item__dish__container__item .item-text {
+.menu__main .menu__section__content__item__dish__container__item .item_text {
   padding: 1em;
 }
-.menu__main .menu__section__content__item__dish__container__item .item-text p {
+.menu__main .menu__section__content__item__dish__container__item .item_text p {
   font-size: 1.2em;
   font-weight: 300;
   color: #353535;
@@ -713,7 +740,7 @@ button:hover,
   z-index: 100;
   display: flex;
   width: 0;
-  height: 85px;
+  height: 90px;
   justify-content: center;
   align-items: center;
   transform: scale(1);
@@ -733,7 +760,7 @@ button:hover,
   display: flex;
   width: 100px;
   display: flex;
-  transform: scale(1.05);
+  transform: scaleX(1.15);
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
