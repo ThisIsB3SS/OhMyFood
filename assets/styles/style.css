@@ -714,6 +714,18 @@ button:hover,
   display: flex;
   flex-direction: column;
 }
+.menu__main .menu__section__content > :nth-child(1) {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+.menu__main .menu__section__content > :nth-child(2) {
+  opacity: 0;
+  animation: fadeIn 1s ease-out 0.5s forwards;
+}
+.menu__main .menu__section__content > :nth-child(3) {
+  opacity: 0;
+  animation: fadeIn 1s ease-out 0.8s forwards;
+}
 .menu__main .menu__section__content__item {
   width: 100%;
   display: flex;
