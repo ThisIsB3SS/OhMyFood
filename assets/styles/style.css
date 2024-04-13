@@ -714,13 +714,17 @@ button:hover,
   background-color: white;
   border-radius: 20px;
   width: auto;
+  height: max-content;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .menu__main .menu__section__content__item__dish__container__item .item_text {
   padding: 1em;
 }
+.menu__main .menu__section__content__item__dish__container__item .item_text h3 {
+  font-size: clamp(1.4em, 3vw, 2em);
+}
 .menu__main .menu__section__content__item__dish__container__item .item_text p {
-  font-size: 1.2em;
+  font-size: clamp(1.2em, 2vw, 1.5em);
   font-weight: 300;
   color: #353535;
   margin-top: 0.4em;
@@ -740,7 +744,7 @@ button:hover,
   z-index: 100;
   display: flex;
   width: 0;
-  height: 90px;
+  height: clamp(120px, 120px, 7vh);
   justify-content: center;
   align-items: center;
   transform: scale(1);
@@ -755,12 +759,12 @@ button:hover,
 .menu__main .menu__section__content__item__dish__container__item:hover .price-container span {
   transform: translateX(-0.3em);
   transition: all 0.5s ease-in-out;
+  height: 100%;
 }
 .menu__main .menu__section__content__item__dish__container__item:hover .price-container .checked-panel {
-  display: flex;
+  display: inline-flex;
   width: 100px;
-  display: flex;
-  transform: scaleX(1.15);
+  transform: scaleX(1.2);
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }

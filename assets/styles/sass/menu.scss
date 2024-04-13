@@ -102,11 +102,15 @@
             background-color: white;
             border-radius: 20px;
             width: auto;
+            height: max-content;
             box-shadow: 0px 4.01px 15.04px 0px #0000001a;
             & .item_text {
               padding: 1em;
+              & h3 {
+                font-size: clamp(1.4em, 3vw, 2em);
+              }
               & p {
-                font-size: 1.2em;
+                font-size: clamp(1.2em, 2vw, 1.5em);
                 font-weight: 300;
                 color: $grey;
                 margin-top: 0.4em;
@@ -126,7 +130,8 @@
                 z-index: 100;
                 display: flex;
                 width: 0;
-                height: 90px;
+                height: clamp(120px, 120px, 7vh);
+
                 justify-content: center;
                 align-items: center;
                 transform: scale(1);
@@ -142,15 +147,16 @@
             }
             &:hover {
               & .price-container {
+                // height: 100%;
                 & span {
                   transform: translateX(-0.3em);
                   transition: all 0.5s ease-in-out;
+                  height: 100%;
                 }
                 & .checked-panel {
-                  display: flex;
+                  display: inline-flex;
                   width: 100px;
-                  display: flex;
-                  transform: scaleX(1.15);
+                  transform: scaleX(1.2);
                   opacity: 1;
                   transition: all 0.3s ease-in-out;
                 }
