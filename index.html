@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/3ce939fd74.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Oh my food</title>
   </head>
   <body>
@@ -15,9 +19,11 @@
       />
     </header>
     <main>
+      <!-- Loader -->
       <div class="loader__container">
         <div class="loader"></div>
       </div>
+      <!-- Emplacement du service -->
       <div class="location">
         <img
           src="assets/icons/location-icon.svg"
@@ -26,6 +32,7 @@
         />
         <p class="location--text">Paris, Belleville</p>
       </div>
+      <!-- Section Hero -->
       <section class="hero__section">
         <h1>Réservez le menu qui vous convient</h1>
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
@@ -33,6 +40,7 @@
           Explorer nos restaurants
         </a>
       </section>
+      <!-- Section Fonctionnement / About -->
       <section class="about__section">
         <h2>Fonctionnement</h2>
         <ul class="about__section__container">
@@ -53,9 +61,11 @@
           </li>
         </ul>
       </section>
+      <!-- Affichage des restaurants -->
       <section class="restaurants__section" id="restaurants_section">
         <h2>Restaurants</h2>
         <ul class="restaurants__section__list">
+          <!-- Premier restaurant -->
           <li class="restaurants__section__list--card">
             <a href="./restaurants/La_palette_du_goût/index.html">
               <div class="image_container">
@@ -75,28 +85,16 @@
                   <h3>La palette du goût</h3>
                   <p>Ménilmontant</p>
                 </div>
-                <input
-                  type="checkbox"
-                  id="heart-icon-checkbox-1"
-                  style="display: none"
-                />
-                <label for="heart-icon-checkbox-1">
-                  <svg
-                    class="heart-icon"
-                    width="23"
-                    height="21"
-                    viewBox="0 0 23 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.7206 2.40588L12.7203 2.40612L11.8739 3.35768L11.5003 3.77764L11.1267 3.35768L10.2802 2.40612L10.2797 2.40551C8.28247 0.152951 5.09737 -0.169283 2.9764 1.80238C0.482212 4.12487 0.344816 8.32394 2.58455 10.8499L10.8987 20.2152C10.8987 20.2152 10.8988 20.2153 10.8988 20.2153C11.237 20.5959 11.7593 20.5959 12.0975 20.2153C12.0975 20.2153 12.0975 20.2152 12.0976 20.2152L20.4119 10.8497L20.412 10.8496C22.6556 8.32372 22.5183 4.12498 20.0243 1.8025L12.7206 2.40588ZM12.7206 2.40588C14.7223 0.152696 17.9032 -0.169085 20.024 1.80223L12.7206 2.40588Z"
-                      stroke="#101010"
-                    />
-                  </svg>
-                </label>
               </div>
             </a>
+            <div class="heart-container">
+              <span class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span class="heart-icon-active">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
           </li>
           <!-- Deuxième restaurant -->
           <li class="restaurants__section__list--card">
@@ -118,28 +116,16 @@
                   <h3>La note enchantée</h3>
                   <p>Charonne</p>
                 </div>
-                <input
-                  type="checkbox"
-                  id="heart-icon-checkbox-2"
-                  style="display: none"
-                />
-                <label for="heart-icon-checkbox-2">
-                  <svg
-                    class="heart-icon"
-                    width="23"
-                    height="21"
-                    viewBox="0 0 23 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.7206 2.40588L12.7203 2.40612L11.8739 3.35768L11.5003 3.77764L11.1267 3.35768L10.2802 2.40612L10.2797 2.40551C8.28247 0.152951 5.09737 -0.169283 2.9764 1.80238C0.482212 4.12487 0.344816 8.32394 2.58455 10.8499L10.8987 20.2152C10.8987 20.2152 10.8988 20.2153 10.8988 20.2153C11.237 20.5959 11.7593 20.5959 12.0975 20.2153C12.0975 20.2153 12.0975 20.2152 12.0976 20.2152L20.4119 10.8497L20.412 10.8496C22.6556 8.32372 22.5183 4.12498 20.0243 1.8025L12.7206 2.40588ZM12.7206 2.40588C14.7223 0.152696 17.9032 -0.169085 20.024 1.80223L12.7206 2.40588Z"
-                      stroke="#101010"
-                    />
-                  </svg>
-                </label>
               </div>
             </a>
+            <div class="heart-container">
+              <span class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span class="heart-icon-active">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
           </li>
           <!-- Troisième restaurant -->
           <li class="restaurants__section__list--card">
@@ -156,28 +142,16 @@
                   <h3>A la française</h3>
                   <p>Cité rouge</p>
                 </div>
-                <input
-                  type="checkbox"
-                  id="heart-icon-checkbox-3"
-                  style="display: none"
-                />
-                <label for="heart-icon-checkbox-3">
-                  <svg
-                    class="heart-icon"
-                    width="23"
-                    height="21"
-                    viewBox="0 0 23 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.7206 2.40588L12.7203 2.40612L11.8739 3.35768L11.5003 3.77764L11.1267 3.35768L10.2802 2.40612L10.2797 2.40551C8.28247 0.152951 5.09737 -0.169283 2.9764 1.80238C0.482212 4.12487 0.344816 8.32394 2.58455 10.8499L10.8987 20.2152C10.8987 20.2152 10.8988 20.2153 10.8988 20.2153C11.237 20.5959 11.7593 20.5959 12.0975 20.2153C12.0975 20.2153 12.0975 20.2152 12.0976 20.2152L20.4119 10.8497L20.412 10.8496C22.6556 8.32372 22.5183 4.12498 20.0243 1.8025L12.7206 2.40588ZM12.7206 2.40588C14.7223 0.152696 17.9032 -0.169085 20.024 1.80223L12.7206 2.40588Z"
-                      stroke="#101010"
-                    />
-                  </svg>
-                </label>
               </div>
             </a>
+            <div class="heart-container">
+              <span class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span class="heart-icon-active">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
           </li>
           <!-- Dernier restaurant -->
           <li class="restaurants__section__list--card">
@@ -194,28 +168,16 @@
                   <h3>Le délice des sens</h3>
                   <p>Folie-Méricourt</p>
                 </div>
-                <input
-                  type="checkbox"
-                  id="heart-icon-checkbox-4"
-                  style="display: none"
-                />
-                <label for="heart-icon-checkbox-4">
-                  <svg
-                    class="heart-icon"
-                    width="23"
-                    height="21"
-                    viewBox="0 0 23 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.7206 2.40588L12.7203 2.40612L11.8739 3.35768L11.5003 3.77764L11.1267 3.35768L10.2802 2.40612L10.2797 2.40551C8.28247 0.152951 5.09737 -0.169283 2.9764 1.80238C0.482212 4.12487 0.344816 8.32394 2.58455 10.8499L10.8987 20.2152C10.8987 20.2152 10.8988 20.2153 10.8988 20.2153C11.237 20.5959 11.7593 20.5959 12.0975 20.2153C12.0975 20.2153 12.0975 20.2152 12.0976 20.2152L20.4119 10.8497L20.412 10.8496C22.6556 8.32372 22.5183 4.12498 20.0243 1.8025L12.7206 2.40588ZM12.7206 2.40588C14.7223 0.152696 17.9032 -0.169085 20.024 1.80223L12.7206 2.40588Z"
-                      stroke="#101010"
-                    />
-                  </svg>
-                </label>
               </div>
             </a>
+            <div class="heart-container">
+              <span class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span class="heart-icon-active">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
           </li>
         </ul>
       </section>

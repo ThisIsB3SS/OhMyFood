@@ -66,45 +66,6 @@ button:hover,
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
-#heart-icon-checkbox {
-  border: none !important;
-  box-shadow: none !important;
-  background: white !important;
-  z-index: 100;
-}
-#heart-icon-checkbox#heart-icon-checkbox-1:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-2:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-3:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-4:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-5:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-6:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-7:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-8:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-
 @keyframes l19 {
   90%, 100% {
     background-size: 100% 100%;
@@ -190,6 +151,209 @@ button:hover,
   .header__main img {
     width: 15%;
   }
+}
+
+.footer {
+  height: auto;
+  width: 100%;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  background-color: #353535;
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 2em 1em;
+    place-items: end;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 2em 5em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .logo__container__footer {
+    order: 2;
+    margin-left: 2em;
+    height: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer .logo__container__footer {
+    margin-left: 0;
+    margin-right: 2em;
+  }
+}
+.footer .logo__container__footer .logo--white {
+  color: white;
+  fill: white;
+  width: auto;
+  height: 100%;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-weight: 300;
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+  }
+}
+.footer ul li {
+  display: flex;
+  place-items: center;
+  gap: 0.8em;
+}
+@media screen and (min-width: 768px) {
+  .footer ul li {
+    order: 1;
+  }
+}
+.footer ul li img {
+  margin: 0%;
+  padding: 0%;
+  width: 1em;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: whitesmoke;
+  z-index: 1000;
+  top: 0%;
+  left: 0%;
+  animation: isLoading 4s forwards;
+}
+.loader__container .loader {
+  width: 60px;
+  aspect-ratio: 1;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%) bottom/100% 0% no-repeat #ccc;
+  mask: radial-gradient(circle at 60% 65%, #000 62%, rgba(0, 0, 0, 0) 65%) top left, radial-gradient(circle at 40% 65%, #000 62%, rgba(0, 0, 0, 0) 65%) top right, linear-gradient(to bottom left, #000 42%, rgba(0, 0, 0, 0) 43%) bottom left, linear-gradient(to bottom right, #000 42%, rgba(0, 0, 0, 0) 43%) bottom right;
+  mask-size: 50% 50%;
+  mask-repeat: no-repeat;
+  animation: l19 2s infinite linear;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a :visited {
+  color: black;
+}
+
+button,
+.button {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  width: auto;
+  height: auto;
+  padding: 1.2em;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+button:hover,
+.button:hover {
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+
+.heart-container {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  font-size: 1.5em;
+}
+.heart-container .heart-icon-active {
+  display: none;
+}
+.heart-container:hover .heart-icon {
+  display: none;
+}
+.heart-container:hover .heart-icon-active {
+  display: block;
+  color: #9356dc;
+}
+
+.heart-container-menu {
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  font-size: 1.5em;
+}
+.heart-container-menu .heart-icon-active {
+  display: none;
+}
+.heart-container-menu:hover .heart-icon {
+  display: none;
+}
+.heart-container-menu:hover .heart-icon-active {
+  display: block;
+  color: #9356dc;
 }
 
 .location {
@@ -360,42 +524,6 @@ button:hover,
 }
 .restaurants__section__list--card a .card-content-container input {
   position: absolute;
-  border: none !important;
-  box-shadow: none !important;
-  background: white !important;
-  z-index: 100;
-}
-.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-1:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-2:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-3:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-4:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-5:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-6:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-7:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.restaurants__section__list--card a .card-content-container input#heart-icon-checkbox-8:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
 }
 .restaurants__section__list--card a .card-content-container .text-container {
   display: flex;
@@ -420,80 +548,6 @@ button:hover,
   position: absolute;
   top: 1em;
   right: 1em;
-}
-
-.footer {
-  height: auto;
-  width: 100%;
-  padding: 1.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: stretch;
-  background-color: #353535;
-  color: white;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    padding: 2em 1em;
-    place-items: end;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer {
-    padding: 2em 5em;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer .logo__container__footer {
-    order: 2;
-    margin-left: 2em;
-    height: 2em;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer .logo__container__footer {
-    margin-left: 0;
-    margin-right: 2em;
-  }
-}
-.footer .logo__container__footer .logo--white {
-  color: white;
-  fill: white;
-  width: auto;
-  height: 100%;
-}
-.footer ul {
-  padding: 0;
-  list-style: none;
-  font-size: 1.25rem;
-  font-weight: 700;
-  font-weight: 300;
-  gap: 0.5em;
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .footer ul {
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 1em;
-  }
-}
-.footer ul li {
-  display: flex;
-  place-items: center;
-  gap: 0.8em;
-}
-@media screen and (min-width: 768px) {
-  .footer ul li {
-    order: 1;
-  }
-}
-.footer ul li img {
-  margin: 0%;
-  padding: 0%;
-  width: 1em;
 }
 
 body {
@@ -564,45 +618,6 @@ button:hover,
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
-#heart-icon-checkbox {
-  border: none !important;
-  box-shadow: none !important;
-  background: white !important;
-  z-index: 100;
-}
-#heart-icon-checkbox#heart-icon-checkbox-1:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-2:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-3:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-4:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-5:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-6:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-7:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-#heart-icon-checkbox#heart-icon-checkbox-8:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-
 .menu__main {
   position: relative;
   height: auto;
@@ -657,43 +672,7 @@ button:hover,
   }
 }
 .menu__main .menu__section__heading input {
-  border: none !important;
-  box-shadow: none !important;
-  background: white !important;
-  z-index: 100;
   position: inherit;
-}
-.menu__main .menu__section__heading input#heart-icon-checkbox-1:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.menu__main .menu__section__heading input#heart-icon-checkbox-2:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.menu__main .menu__section__heading input#heart-icon-checkbox-3:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.menu__main .menu__section__heading input#heart-icon-checkbox-4:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.menu__main .menu__section__heading input#heart-icon-checkbox-5:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.menu__main .menu__section__heading input#heart-icon-checkbox-6:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.menu__main .menu__section__heading input#heart-icon-checkbox-7:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
-}
-.menu__main .menu__section__heading input#heart-icon-checkbox-8:checked + label .heart-icon path {
-  fill: #9356dc;
-  stroke: #9356dc;
 }
 .menu__main .menu__section__heading--title {
   font-family: "Shrikhand", serif;
@@ -822,30 +801,6 @@ button:hover,
   min-width: 10em;
   text-align: center;
   font-weight: 400;
-}
-
-/* HTML: <div class="loader"></div> */
-.loader__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background-color: whitesmoke;
-  z-index: 1000;
-  top: 0%;
-  left: 0%;
-  animation: isLoading 4s forwards;
-}
-.loader__container .loader {
-  width: 60px;
-  aspect-ratio: 1;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%) bottom/100% 0% no-repeat #ccc;
-  mask: radial-gradient(circle at 60% 65%, #000 62%, rgba(0, 0, 0, 0) 65%) top left, radial-gradient(circle at 40% 65%, #000 62%, rgba(0, 0, 0, 0) 65%) top right, linear-gradient(to bottom left, #000 42%, rgba(0, 0, 0, 0) 43%) bottom left, linear-gradient(to bottom right, #000 42%, rgba(0, 0, 0, 0) 43%) bottom right;
-  mask-size: 50% 50%;
-  mask-repeat: no-repeat;
-  animation: l19 2s infinite linear;
 }
 
 html,

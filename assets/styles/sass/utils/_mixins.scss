@@ -25,7 +25,7 @@
   height: auto;
   padding: 1.2em;
   border-radius: 25px;
-  
+
   box-shadow: 0px 4px 10px 0px #00000040;
   font-weight: 600;
   color: white;
@@ -42,17 +42,7 @@
 }
 
 @mixin heart-icon-checkbox {
-  border: none !important;
-  box-shadow: none !important;
-  background: white !important;
-  z-index: 100;
-
-  @for $i from 1 through 8 {
-    &#heart-icon-checkbox-#{$i}:checked + label .heart-icon path {
-      fill: $purple;
-      stroke: $purple;
-    }
-  }
+ 
 }
 
 @mixin new-restaurant-tag {

@@ -1,0 +1,38 @@
+@import '../utils/variables';
+.heart-container {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  font-size: 1.5em;
+
+  .heart-icon-active {
+    display: none;
+  }
+  &:hover .heart-icon {
+    display: none;
+  }
+  &:hover .heart-icon-active {
+    display: block;
+    color: $purple;
+  }
+}
+.heart-container-menu {
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  font-size: 1.5em;
+
+  .heart-icon-active {
+    display: none;
+  }
+  &:hover .heart-icon {
+    display: none;
+  }
+  &:hover .heart-icon-active {
+    display: block;
+    color: $purple;
+  }
+}

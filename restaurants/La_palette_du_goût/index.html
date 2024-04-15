@@ -9,6 +9,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../assets/styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/3ce939fd74.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Menu - La palette du goût</title>
   </head>
   <body>
@@ -31,26 +35,14 @@
       <section class="menu__section">
         <div class="menu__section__heading">
           <h1 class="menu__section__heading--title">La palette du goût</h1>
-          <input
-            type="checkbox"
-            id="heart-icon-checkbox-6"
-            style="display: none"
-          />
-          <label for="heart-icon-checkbox-6">
-            <svg
-              class="heart-icon"
-              width="30"
-              height="30"
-              viewBox="0 0 23 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.7206 2.40588L12.7203 2.40612L11.8739 3.35768L11.5003 3.77764L11.1267 3.35768L10.2802 2.40612L10.2797 2.40551C8.28247 0.152951 5.09737 -0.169283 2.9764 1.80238C0.482212 4.12487 0.344816 8.32394 2.58455 10.8499L10.8987 20.2152C10.8987 20.2152 10.8988 20.2153 10.8988 20.2153C11.237 20.5959 11.7593 20.5959 12.0975 20.2153C12.0975 20.2153 12.0975 20.2152 12.0976 20.2152L20.4119 10.8497L20.412 10.8496C22.6556 8.32372 22.5183 4.12498 20.0243 1.8025L12.7206 2.40588ZM12.7206 2.40588C14.7223 0.152696 17.9032 -0.169085 20.024 1.80223L12.7206 2.40588Z"
-                stroke="#101010"
-              />
-            </svg>
-          </label>
+          <div class="heart-container-menu">
+            <span class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
+            </span>
+            <span class="heart-icon-active">
+              <i class="fa-solid fa-heart"></i>
+            </span>
+          </div>
         </div>
         <div class="menu__section__content">
           <div class="menu__section__content__item">
@@ -139,10 +131,8 @@
             <ul class="menu__section__content__item__dish__container">
               <li class="menu__section__content__item__dish__container__item">
                 <div class="item_text">
-                  <h3>Filet de bœuf aux herbes
-                </h3>
-                  <p>Accompagné de sa ribambelle de légumes
-                </p>
+                  <h3>Filet de bœuf aux herbes</h3>
+                  <p>Accompagné de sa ribambelle de légumes</p>
                 </div>
                 <div class="price-container">
                   <span>40€</span>
@@ -164,9 +154,7 @@
               </li>
               <li class="menu__section__content__item__dish__container__item">
                 <div class="item_text">
-                  <h3>Parmentier de queue de bœuf
-
-                </h3>
+                  <h3>Parmentier de queue de bœuf</h3>
                   <p>À la truffe noire et purée de panais</p>
                 </div>
                 <div class="price-container">
@@ -189,10 +177,8 @@
               </li>
               <li class="menu__section__content__item__dish__container__item">
                 <div class="item_text">
-                  <h3>Filet de turbot
-                </h3>
-                  <p>Aux agrumes
-                </p>
+                  <h3>Filet de turbot</h3>
+                  <p>Aux agrumes</p>
                 </div>
                 <div class="price-container">
                   <span>44€</span>
@@ -222,10 +208,8 @@
             <ul class="menu__section__content__item__dish__container">
               <li class="menu__section__content__item__dish__container__item">
                 <div class="item_text">
-                  <h3>Paris-Brest
-                </h3>
-                  <p>Revisité
-                </p>
+                  <h3>Paris-Brest</h3>
+                  <p>Revisité</p>
                 </div>
                 <div class="price-container">
                   <span>18€</span>
@@ -247,10 +231,8 @@
               </li>
               <li class="menu__section__content__item__dish__container__item">
                 <div class="item_text">
-                  <h3>Macaron au chocolat d'exception 
-                </h3>
-                  <p>Et glace à la vanille de Madagascar
-                </p>
+                  <h3>Macaron au chocolat d'exception</h3>
+                  <p>Et glace à la vanille de Madagascar</p>
                 </div>
                 <div class="price-container">
                   <span>22€</span>
@@ -272,10 +254,8 @@
               </li>
               <li class="menu__section__content__item__dish__container__item">
                 <div class="item_text">
-                  <h3>Mousse au chocolat 
-                </h3>
-                  <p>Au piment d'Espelette et à la truffe noire
-                </p>
+                  <h3>Mousse au chocolat</h3>
+                  <p>Au piment d'Espelette et à la truffe noire</p>
                 </div>
                 <div class="price-container">
                   <span>23€</span>

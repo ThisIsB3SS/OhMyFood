@@ -1,14 +1,15 @@
-@import 'variables.scss';
-@import 'mixins.scss';
-@import 'keyframes.scss';
-@import 'header.scss';
-@import 'location.scss';
-@import 'hero.scss';
-@import 'about.scss';
-@import 'restaurants.scss';
-@import 'footer.scss';
-@import 'menu.scss';
-@import 'loader.scss';
+@import './utils/variables.scss';
+@import './utils/mixins.scss';
+@import './utils/keyframes.scss';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './components/loader.scss';
+@import './components/heart-icon.scss';
+@import './sections/location.scss';
+@import './sections/hero.scss';
+@import './sections/about.scss';
+@import './sections/restaurants.scss';
+@import './pages/menu.scss';
 
 html,
 body {
