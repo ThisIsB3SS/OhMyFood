@@ -233,7 +233,6 @@ button:hover,
   width: 1em;
 }
 
-/* HTML: <div class="loader"></div> */
 .loader__container {
   display: flex;
   justify-content: center;
