@@ -101,6 +101,8 @@ button:hover,
   align-items: center;
   padding: 1em 1.5em;
   background-color: white;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1490196078);
+  z-index: 10;
 }
 .header__menu__arrow-back-icon {
   position: absolute;
@@ -136,9 +138,9 @@ button:hover,
   width: 100%;
   margin: auto;
   padding: 5% 1.5em;
-  /* Shadow/Badge */
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: white;
+  box-shadow: 20px 25px 20px 20px rgba(0, 0, 0, 0.1490196078);
+  z-index: 10;
 }
 .header__main img {
   width: 50%;
@@ -149,7 +151,8 @@ button:hover,
     padding: 2em 1.5em;
   }
   .header__main img {
-    width: 15%;
+    height: 10%;
+    max-height: 50px;
   }
 }
 
