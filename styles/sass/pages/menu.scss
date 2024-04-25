@@ -47,12 +47,15 @@
       align-items: center;
       text-align: center;
       margin: 0;
-      margin-right: 5%;
+      margin-right: 10%;
+      margin-left: 5%;
       padding: 0;
       @media screen and (min-width: 768px) {
         gap: 1em;
         padding: 0 1em;
         justify-content: center;
+        margin-right: 0;
+        margin-left: 5%;
       }
       &--title {
         font-family: $font-shrikhand;
@@ -109,8 +112,6 @@
           & h2 {
             font-size: 1.2em;
             font-weight: 300;
-            // Mobile version
-      
           }
         }
         &__dish__container {

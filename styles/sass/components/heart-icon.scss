@@ -1,4 +1,18 @@
 @import '../utils/variables';
+.heart-icon {
+  display: block;
+  background-image: url('/assets/icons/heart-icon.svg');
+  background-repeat: no-repeat;
+  height: 21px;
+  width: 21px;
+}
+.heart-icon-active {
+  display: none;
+  background-image: url('/assets/icons/heart-icon-gradient.svg');
+  background-repeat: no-repeat;
+  height: 21px;
+  width: 21px;
+}
 .heart-container {
   position: absolute;
   bottom: 10%;
@@ -8,15 +22,11 @@
   height: 20px;
   font-size: 1.5em;
 
-  .heart-icon-active {
-    display: none;
-  }
   &:hover .heart-icon {
     display: none;
   }
   &:hover .heart-icon-active {
     display: block;
-    color: $purple;
   }
 }
 .heart-container-menu {
@@ -33,6 +43,5 @@
   }
   &:hover .heart-icon-active {
     display: block;
-    color: $purple;
   }
 }
