@@ -737,6 +737,13 @@ button:hover,
   padding: 10% 1.5em;
   background-color: #f6f6f6;
   margin-top: -5vh;
+  margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .menu__main .menu__section {
+    width: 97vw;
+    padding: 5% 0.5em;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu__main .menu__section {
@@ -795,11 +802,18 @@ button:hover,
   animation: fadeIn 1s ease-out 0.8s forwards;
 }
 .menu__main .menu__section__content__item {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-items: start;
   align-items: start;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+@media screen and (max-width: 768px) {
+  .menu__main .menu__section__content__item {
+    width: 93%;
+  }
 }
 .menu__main .menu__section__content__item--title {
   border-bottom: 4px solid #99e2d0;
