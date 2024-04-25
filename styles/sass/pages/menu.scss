@@ -54,10 +54,6 @@
         padding: 0 1em;
         justify-content: center;
       }
-      & input {
-        @include heart-icon-checkbox;
-        position: inherit;
-      }
       &--title {
         font-family: $font-shrikhand;
         font-size: 2.2em;
@@ -67,6 +63,10 @@
         margin: 0;
         padding: 0;
         text-wrap: nowrap;
+        // Mobile version
+        @media screen and (max-width: 768px) {
+          font-size: 2em;
+        }
       }
     }
     &__content {
@@ -109,6 +109,8 @@
           & h2 {
             font-size: 1.2em;
             font-weight: 300;
+            // Mobile version
+      
           }
         }
         &__dish__container {
@@ -137,7 +139,7 @@
               width: 550px;
               z-index: 110;
               & h3 {
-                font-size: clamp(1.3em, 3vw, 2em);
+                font-size: clamp(1em, 3vw, 2em);
                 text-wrap: nowrap;
               }
               & p {

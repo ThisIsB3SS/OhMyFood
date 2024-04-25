@@ -428,10 +428,11 @@ button:hover,
   .about__section__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 90%;
     flex-wrap: wrap;
+    padding-left: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -599,7 +600,7 @@ button:hover,
 }
 @media screen and (max-width: 768px) {
   .restaurants__section__container--card {
-    width: 90%;
+    width: 85%;
   }
 }
 .restaurants__section__container--card a {
@@ -769,9 +770,6 @@ button:hover,
     justify-content: center;
   }
 }
-.menu__main .menu__section__heading input {
-  position: inherit;
-}
 .menu__main .menu__section__heading--title {
   font-family: "Shrikhand", serif;
   font-size: 2.2em;
@@ -781,6 +779,11 @@ button:hover,
   margin: 0;
   padding: 0;
   text-wrap: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .menu__main .menu__section__heading--title {
+    font-size: 2em;
+  }
 }
 .menu__main .menu__section__content {
   margin-top: 3em;
@@ -854,7 +857,7 @@ button:hover,
   z-index: 110;
 }
 .menu__main .menu__section__content__item__dish__container__item .item_text h3 {
-  font-size: clamp(1.3em, 3vw, 2em);
+  font-size: clamp(1em, 3vw, 2em);
   text-wrap: nowrap;
 }
 .menu__main .menu__section__content__item__dish__container__item .item_text p {
