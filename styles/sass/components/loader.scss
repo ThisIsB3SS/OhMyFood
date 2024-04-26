@@ -1,32 +1,32 @@
-// .loader__container {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100vh;
-//   width: 100vw;
-//   position: fixed;
-//   background-color: whitesmoke;
-//   z-index: 1000;
-//   top: 0%;
-//   left: 0%;
-//   animation: isLoading 4s forwards;
+.loader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: whitesmoke;
+  z-index: 1000;
+  top: 0%;
+  left: 0%;
+  animation: isLoading 4s forwards;
 
-//   .loader {
-//     width: 60px;
-//     height: 60px;
-//     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%) bottom/100% 0% no-repeat #ccc;
-//     -webkit-mask: 
-//       radial-gradient(circle at 60% 65%, #000 62%, transparent 65%) top left,
-//       radial-gradient(circle at 40% 65%, #000 62%, transparent 65%) top right,
-//       linear-gradient(to bottom left, #000 42%, transparent 43%) bottom left,
-//       linear-gradient(to bottom right, #000 42%, transparent 43%) bottom right;
-//     mask: 
-//       radial-gradient(circle at 60% 65%, #000 62%, transparent 65%) top left,
-//       radial-gradient(circle at 40% 65%, #000 62%, transparent 65%) top right,
-//       linear-gradient(to bottom left, #000 42%, transparent 43%) bottom left,
-//       linear-gradient(to bottom right, #000 42%, transparent 43%) bottom right;
-//     mask-size: 50% 50%;
-//     mask-repeat: no-repeat;
-//     animation: l19 2s infinite linear;
-//   }
-// }
+  .loader {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%) bottom/100% 0% no-repeat #ccc;
+    -webkit-mask: 
+      radial-gradient(circle at 60% 65%, #000 62%, transparent 65%) top left,
+      radial-gradient(circle at 40% 65%, #000 62%, transparent 65%) top right,
+      linear-gradient(to bottom left, #000 42%, transparent 43%) bottom left,
+      linear-gradient(to bottom right, #000 42%, transparent 43%) bottom right;
+    mask: 
+      radial-gradient(circle at 60% 65%, #000 62%, transparent 65%) top left,
+      radial-gradient(circle at 40% 65%, #000 62%, transparent 65%) top right,
+      linear-gradient(to bottom left, #000 42%, transparent 43%) bottom left,
+      linear-gradient(to bottom right, #000 42%, transparent 43%) bottom right;
+    mask-size: 50% 50%;
+    mask-repeat: no-repeat;
+    animation: l19 2s infinite linear;
+  }
+}
