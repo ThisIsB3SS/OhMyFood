@@ -1,24 +1,18 @@
 @import './mixins.scss';
-$purple: #9356dc;
 
+$purple: #9356dc;
 $blue: #003a68;
 $lightBlue: #89c8fa;
-
 $green: #008766;
 $lightGreen: #99e2d0;
-
-$lightGrey: #eaeaea;
 $grey: #353535;
-
+$lightGrey: #eaeaea;
 $lightCream: #f6f6f6;
-
 $purpleGradient: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-
 $font-family: 'Roboto', sans-serif;
 $font-shrikhand: 'Shrikhand', serif;
-body {
-  background-color: $lightCream;
-}
+
+
 h1,
 h2,
 h3,
@@ -30,21 +24,24 @@ span {
   font-family: $font-family;
   padding: 0;
   margin: 0;
+  font-weight: 700;
+
 }
 h1 {
-  @include h1;
+  font-size: 2.5rem;
 }
 h2 {
-  @include h2;
+  font-size: 2rem;
 }
 h3 {
-  @include h3;
+  font-size: 1.5rem;
 }
 h4 {
-  @include h4;
+  font-size: 1.25rem;
 }
 p {
-  @include p;
+  font-size: 1rem;
+  font-weight: 400;
 }
 a {
   text-decoration: none;
@@ -58,7 +55,4 @@ button,
   @include button;
 }
 
-#heart-icon-checkbox {
-  @include heart-icon-checkbox;
-}
 
