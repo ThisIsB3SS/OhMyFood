@@ -32,13 +32,13 @@
       height: 100%;
       min-height: 2em;
       margin-bottom: 0.5em;
-      margin-left:0.5em;
+      margin-left: 0.5em;
     }
   }
   & ul {
     padding: 0;
     list-style: none;
-    @include h4;
+    font-size: 1.25rem;
     font-weight: 300;
     gap: 0.5em;
     display: flex;

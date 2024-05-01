@@ -63,7 +63,6 @@
           position: relative;
           & input {
             position: absolute;
-            @include heart-icon-checkbox;
           }
           & .text-container {
             display: flex;

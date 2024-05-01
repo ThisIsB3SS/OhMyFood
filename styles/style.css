@@ -1,7 +1,3 @@
-body {
-  background-color: #f6f6f6;
-}
-
 h1,
 h2,
 h3,
@@ -13,26 +9,23 @@ span {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
+  font-weight: 700;
 }
 
 h1 {
   font-size: 2.5rem;
-  font-weight: 700;
 }
 
 h2 {
   font-size: 2rem;
-  font-weight: 700;
 }
 
 h3 {
   font-size: 1.5rem;
-  font-weight: 700;
 }
 
 h4 {
   font-size: 1.25rem;
-  font-weight: 700;
 }
 
 p {
@@ -204,7 +197,6 @@ button:hover,
   padding: 0;
   list-style: none;
   font-size: 1.25rem;
-  font-weight: 700;
   font-weight: 300;
   gap: 0.5em;
   display: flex;
@@ -260,10 +252,6 @@ button:hover,
   animation: l19 2s infinite linear;
 }
 
-body {
-  background-color: #f6f6f6;
-}
-
 h1,
 h2,
 h3,
@@ -275,26 +263,23 @@ span {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
+  font-weight: 700;
 }
 
 h1 {
   font-size: 2.5rem;
-  font-weight: 700;
 }
 
 h2 {
   font-size: 2rem;
-  font-weight: 700;
 }
 
 h3 {
   font-size: 1.5rem;
-  font-weight: 700;
 }
 
 h4 {
   font-size: 1.25rem;
-  font-weight: 700;
 }
 
 p {
@@ -677,10 +662,6 @@ button:hover,
   right: 1em;
 }
 
-body {
-  background-color: #f6f6f6;
-}
-
 h1,
 h2,
 h3,
@@ -692,26 +673,23 @@ span {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
+  font-weight: 700;
 }
 
 h1 {
   font-size: 2.5rem;
-  font-weight: 700;
 }
 
 h2 {
   font-size: 2rem;
-  font-weight: 700;
 }
 
 h3 {
   font-size: 1.5rem;
-  font-weight: 700;
 }
 
 h4 {
   font-size: 1.25rem;
-  font-weight: 700;
 }
 
 p {
@@ -944,7 +922,6 @@ button:hover,
 .menu__main .menu__section__content__item__dish__container__item:hover .price-container .checked-panel {
   display: inline-flex;
   width: 100px;
-  transform: scaleX(1.2);
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
@@ -969,6 +946,7 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   min-width: 375px;
+  background-color: #f6f6f6;
 }
 
 main {
