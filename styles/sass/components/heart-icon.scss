@@ -1,47 +1,44 @@
 @import '../utils/variables';
+@import '../utils/mixins';
+@import '../utils/keyframes';
 .heart-icon {
   display: block;
   background-image: url('/assets/icons/heart-icon.svg');
   background-repeat: no-repeat;
   height: 21px;
   width: 21px;
+  opacity: 1;
 }
 .heart-icon-active {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
   background-image: url('/assets/icons/heart-icon-gradient.svg');
   background-repeat: no-repeat;
   height: 21px;
   width: 21px;
+  opacity: 0;
+  animation: fadeOut 0.3s forwards;
 }
 .heart-container {
   position: absolute;
   bottom: 10%;
   right: 5%;
-  z-index: 10;
-  width: 20px;
-  height: 20px;
-  font-size: 1.5em;
-
-  &:hover .heart-icon {
-    display: none;
-  }
-  &:hover .heart-icon-active {
-    display: block;
-  }
 }
+.heart-container-menu {
+  position: relative;
+}
+.heart-container,
 .heart-container-menu {
   z-index: 10;
   width: 20px;
   height: 20px;
   font-size: 1.5em;
-
-  .heart-icon-active {
-    display: none;
-  }
   &:hover .heart-icon {
-    display: none;
+    animation: fadeOut 0.3s forwards;
   }
   &:hover .heart-icon-active {
-    display: block;
+    animation: fadeIn 0.3s forwards;
   }
 }

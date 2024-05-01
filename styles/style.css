@@ -26,6 +26,22 @@
     opacity: 1;
   }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .header__menu {
   position: relative;
   width: auto;
@@ -167,76 +183,96 @@
   width: 1em;
 }
 
-.loader__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background-color: whitesmoke;
-  z-index: 1000;
-  top: 0%;
-  left: 0%;
-  animation: isLoading 4s forwards;
+@keyframes l19 {
+  90%, 100% {
+    background-size: 100% 100%;
+  }
 }
-.loader__container .loader {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%) bottom/100% 0% no-repeat #ccc;
-  -webkit-mask: radial-gradient(circle at 60% 65%, #000 62%, transparent 65%) top left, radial-gradient(circle at 40% 65%, #000 62%, transparent 65%) top right, linear-gradient(to bottom left, #000 42%, transparent 43%) bottom left, linear-gradient(to bottom right, #000 42%, transparent 43%) bottom right;
-  mask: radial-gradient(circle at 60% 65%, #000 62%, transparent 65%) top left, radial-gradient(circle at 40% 65%, #000 62%, transparent 65%) top right, linear-gradient(to bottom left, #000 42%, transparent 43%) bottom left, linear-gradient(to bottom right, #000 42%, transparent 43%) bottom right;
-  mask-size: 50% 50%;
-  mask-repeat: no-repeat;
-  animation: l19 2s infinite linear;
+@keyframes isLoading {
+  0% {
+    opacity: 1;
+    backdrop-filter: blur(10px);
+  }
+  90% {
+    opacity: 1;
+    backdrop-filter: blur(10px);
+  }
+  100% {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+    z-index: -1;
+  }
 }
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .heart-icon {
   display: block;
   background-image: url("/assets/icons/heart-icon.svg");
   background-repeat: no-repeat;
   height: 21px;
   width: 21px;
+  opacity: 1;
 }
 
 .heart-icon-active {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
   background-image: url("/assets/icons/heart-icon-gradient.svg");
   background-repeat: no-repeat;
   height: 21px;
   width: 21px;
+  opacity: 0;
+  animation: fadeOut 0.3s forwards;
 }
 
 .heart-container {
   position: absolute;
   bottom: 10%;
   right: 5%;
-  z-index: 10;
-  width: 20px;
-  height: 20px;
-  font-size: 1.5em;
-}
-.heart-container:hover .heart-icon {
-  display: none;
-}
-.heart-container:hover .heart-icon-active {
-  display: block;
 }
 
+.heart-container-menu {
+  position: relative;
+}
+
+.heart-container,
 .heart-container-menu {
   z-index: 10;
   width: 20px;
   height: 20px;
   font-size: 1.5em;
 }
-.heart-container-menu .heart-icon-active {
-  display: none;
-}
+.heart-container:hover .heart-icon,
 .heart-container-menu:hover .heart-icon {
-  display: none;
+  animation: fadeOut 0.3s forwards;
 }
+.heart-container:hover .heart-icon-active,
 .heart-container-menu:hover .heart-icon-active {
-  display: block;
+  animation: fadeIn 0.3s forwards;
 }
 
 .location {
