@@ -1,6 +1,36 @@
-@keyframes l19 {
-  90%, 100% {
-    background-size: 100% 100%;
+@keyframes HeartBeat {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  25% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  55% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  85% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 @keyframes isLoading {
@@ -183,9 +213,61 @@
   width: 1em;
 }
 
-@keyframes l19 {
-  90%, 100% {
-    background-size: 100% 100%;
+.loader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: whitesmoke;
+  z-index: 1000;
+  top: 0%;
+  left: 0%;
+  animation: isLoading 4s forwards;
+}
+.loader__container .loader {
+  width: 60px;
+  height: 60px;
+  background-image: url("/assets/icons/heart-icon-gradient.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: HeartBeat 2s infinite linear;
+}
+
+@keyframes HeartBeat {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  25% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  55% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  85% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 @keyframes isLoading {
